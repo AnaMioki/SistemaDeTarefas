@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="NovaPasta1\**" />
+    <Compile Remove="NovaPasta\**" />
+    <Compile Remove="Repositorios\NovaPasta\**" />
+    <Content Remove="NovaPasta1\**" />
+    <Content Remove="NovaPasta\**" />
+    <Content Remove="Repositorios\NovaPasta\**" />
+    <EmbeddedResource Remove="NovaPasta1\**" />
+    <EmbeddedResource Remove="NovaPasta\**" />
+    <EmbeddedResource Remove="Repositorios\NovaPasta\**" />
+    <None Remove="NovaPasta1\**" />
+    <None Remove="NovaPasta\**" />
+    <None Remove="Repositorios\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_GlobalJsonStartingDir Remove="NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_GlobalJsonStartingDir Remove="NovaPasta1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_GlobalJsonStartingDir Remove="Repositorios\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Repositorio\IUsuarioRepositorio.cs" />
+  </ItemGroup>
+
+</Project>
